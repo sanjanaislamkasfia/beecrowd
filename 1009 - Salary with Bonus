@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+#include<iostream>
+#include <iomanip> // Include this for the setprecision
+#include <cmath>  // Include this for the round function,floor function
+using namespace std;
+int main(){
+    string name;
+    float salary,total_sales,TOTAL;
+    cin>>name>>salary>>total_sales;
+   TOTAL=salary+(total_sales*0.15);
+    TOTAL = floor(TOTAL * 100 + 0.5) / 100;
+    cout<<fixed<<setprecision(2)<<"TOTAL = R$ "<<TOTAL<<endl;
+    return 0;
+}
