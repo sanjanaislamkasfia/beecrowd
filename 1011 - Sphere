@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main(){
+    double pi=3.14159,R,VOLUME;
+    cin>>R;
+    VOLUME=(4.0/3.0)*pi*(R*R*R);
+    cout<<fixed<<setprecision(3)<<"VOLUME = "<<VOLUME<<endl;
+    
+    
+    
+    return 0;
+}
