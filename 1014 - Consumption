@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int X;
+    float Y,Z;
+    cin>>X>>Y;
+    Z=X/Y;
+    
+    cout<<fixed<<setprecision(3)<<Z<<" km/l"<<endl;
+    
+    return 0;
+}
