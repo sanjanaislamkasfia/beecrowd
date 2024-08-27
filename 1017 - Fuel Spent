@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main(){
+    int t,km;
+    double distance,fuel;
+    cin>>t>>km;
+    distance=t*km;
+    fuel=distance/12.0;
+    cout<<fixed<<setprecision(3)<<fuel<<endl;
+    return 0;
+}
