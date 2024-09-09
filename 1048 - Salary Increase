@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main(){
+    float salary,bonus,new_salary;
+    int percentage;
+    cin>>salary;
+    if(salary <= 400.00){
+       percentage=15; 
+    }else if(salary <= 800.00){
+       percentage=12; 
+    }else if(salary <= 1200.00){
+       percentage=10; 
+    }else if(salary <= 2000.00){
+       percentage=7; 
+    }else{
+       percentage=4; 
+    }
+    bonus=(percentage*salary)/100.00;
+    new_salary=salary+bonus;
+    cout<<fixed<<setprecision(2)<<"Novo salario: "<<new_salary<<endl;
+    cout<<fixed<<setprecision(2)<<"Reajuste ganho: "<<bonus<<endl;
+    cout<<"Em percentual: "<<percentage<<" %"<<endl;
+    return 0;
+    
+}
