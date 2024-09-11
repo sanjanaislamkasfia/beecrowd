@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main(){
+    double a,b,c,d,e,f;
+    int count=0;
+    double sum = 0.0;
+    cin>>a>>b>>c>>d>>e>>f;
+    if(a>0){
+        count++;
+        sum+=a;
+    }if(b>0){
+        count++;
+        sum+=b;
+    }if(c>0){
+        count++;
+        sum+=c;
+    }if(d>0){
+        count++;
+        sum+=d;
+    }if(e>0){
+        count++;
+        sum+=e;
+    }if(f>0){
+        count++;
+        sum+=f;
+    }
+    cout<<count<<" valores positivos"<<endl;
+    cout<<fixed<<setprecision(1)<<sum/count<<endl;
+    return 0;
+}
