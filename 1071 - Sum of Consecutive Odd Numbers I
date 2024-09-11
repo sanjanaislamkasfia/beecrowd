@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main(){
+    int x,y,sum=0;
+    cin>>x>>y;
+    int min_value=min(x,y);
+    int max_value=max(x,y);
+    for(int i=min_value+1;i<max_value;i++){
+        if(i%2 != 0){
+            sum+=i;
+        }
+    }
+    cout<<sum<<endl;
+    return 0;
+}
