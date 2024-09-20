@@ -1,0 +1,22 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    double score1,score2;
+    int validCount=0;
+    double total=0;
+    while(validCount<2){
+        double score;
+        cin>>score;
+        if(score>=0&&score<=10){
+            validCount++;
+            total+=score;
+        }else{
+            cout<<"nota invalida"<<endl;
+        }
+    }
+    double average=total/2;
+    cout<<fixed<<setprecision(2);
+    cout<<"media = "<<average<<endl;
+    return 0;
+}
