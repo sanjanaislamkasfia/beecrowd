@@ -2,14 +2,14 @@
 #include<iostream>
 using namespace std;
 int main() {
-    int startDay, endDay, startHour, startMinute, startSecond;
-    int endHour, endMinute, endSecond;
+    int startDay,endDay,startHour,startMinute,startSecond;
+    int endHour,endMinute,endSecond;
     string ignore;
-    cin >> ignore >> startDay;
-    cin >> startHour >> ignore >> startMinute >> ignore >> startSecond;
+    cin>>ignore>>startDay;
+    cin>>startHour>>ignore>>startMinute>>ignore>>startSecond;
 
-    cin >> ignore >> endDay;
-    cin >> endHour >> ignore >> endMinute >> ignore >> endSecond;
+    cin>>ignore>>endDay;
+    cin>>endHour>>ignore>>endMinute>>ignore>>endSecond;
 
     int startTotalSeconds = startDay * 24 * 3600 + startHour * 3600 + startMinute * 60 + startSecond;
     int endTotalSeconds = endDay * 24 * 3600 + endHour * 3600 + endMinute * 60 + endSecond;
