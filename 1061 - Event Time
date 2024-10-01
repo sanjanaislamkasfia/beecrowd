@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main() {
+    int startDay, endDay, startHour, startMinute, startSecond;
+    int endHour, endMinute, endSecond;
+    string ignore;
+    cin >> ignore >> startDay;
+    cin >> startHour >> ignore >> startMinute >> ignore >> startSecond;
+
+    cin >> ignore >> endDay;
+    cin >> endHour >> ignore >> endMinute >> ignore >> endSecond;
+
+    int startTotalSeconds = startDay * 24 * 3600 + startHour * 3600 + startMinute * 60 + startSecond;
+    int endTotalSeconds = endDay * 24 * 3600 + endHour * 3600 + endMinute * 60 + endSecond;
+
+    int durationInSeconds = endTotalSeconds - startTotalSeconds;
+
+    int W = durationInSeconds / (24 * 3600);
+    durationInSeconds %= 24 * 3600;
+
+    int X = durationInSeconds / 3600;
+    durationInSeconds %= 3600;
+
+    int Y = durationInSeconds / 60;
+    durationInSeconds %= 60;
+
+    int Z = durationInSeconds;
+
+    cout << W << " dia(s)" << endl;
+    cout << X << " hora(s)" << endl;
+    cout << Y << " minuto(s)" << endl;
+    cout << Z << " segundo(s)" << endl;
+
+    return 0;
+}
