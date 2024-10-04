@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Precompute Fibonacci numbers up to 60
+    unsigned long long fib[61]; // Array to store Fibonacci numbers
+    fib[0] = 0; // First Fibonacci number
+    fib[1] = 1; // Second Fibonacci number
+
+    // Fill the array with Fibonacci numbers up to Fib(60)
+    for (int i = 2; i <= 60; i++) {
+        fib[i] = fib[i-1] + fib[i-2];
+    }
+
+    int T, N;
+    cin >> T; // Number of test cases
+
+    // Process each test case
+    for (int i = 0; i < T; i++) {
+        cin >> N; // Read the N-th Fibonacci number to be displayed
+        cout << "Fib(" << N << ") = " << fib[N] << endl;
+    }
+
+    return 0;
+}
