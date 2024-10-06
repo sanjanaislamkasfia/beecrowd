@@ -2,31 +2,29 @@
 #include<iostream>
 using namespace std;
 int main() {
-    int N, X;
-    cin >> N;
-    while (N > 0) {
-        cin >> X;
-        bool isPrime = true;
-        if (X < 2) {
-            isPrime = false; 
-        } else {
-            int j = 2;
-            while (j * j <= X) {
-                if (X % j == 0) { 
-                    isPrime = false; 
+    int N,X;
+    cin>>N;
+    while(N>0){
+        cin>>X;
+        bool isPrime=true;
+        if(X<2){
+            isPrime=false; 
+        }else{
+            int j=2;
+            while(j*j<=X){
+                if(X%j==0){ 
+                    isPrime=false; 
                     break;
                 }
                 j++;
             }
         }
-        if (isPrime) {
-            cout << X << " eh primo" << endl;
-        } else {
-            cout << X << " nao eh primo" << endl;
+        if(isPrime){
+            cout<<X<<" eh primo"<<endl;
+        }else{
+            cout<<X<<" nao eh primo"<<endl;
         }
-
         N--; 
     }
-
     return 0;
 }
