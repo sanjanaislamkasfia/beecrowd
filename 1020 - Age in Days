@@ -9,7 +9,7 @@ int main(){
     month=n/30;
     days=n%30;
     cout<<year<<" ano(s)"<<endl;
-    cout << month << " mes(es)" << endl;
-    cout << days << " dia(s)" << endl;
+    cout<<month<<" mes(es)"<<endl;
+    cout<<days<<" dia(s)"<<endl;
     return 0;
 }
