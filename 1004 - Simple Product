@@ -6,8 +6,5 @@ int main(){
     cin>>A>>B;
     PROD=A*B;
     cout<<"PROD = "<<PROD<<endl;
-    
-    
-    
     return 0;
 }
