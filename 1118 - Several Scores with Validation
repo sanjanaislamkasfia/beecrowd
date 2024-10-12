@@ -1,0 +1,32 @@
+#include<iostream>
+#include<iomanip>
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    double score1, score2, score;
+    int option;
+    while (true) {
+        int valid_scores = 0;
+        double sum = 0.0;
+        while (valid_scores < 2) {
+            cin >> score;
+            if (score >= 0.0 && score <= 10.0) {
+                sum += score;
+                valid_scores++;
+            } else {
+                cout << "nota invalida" << endl;
+            }
+        }
+        double average = sum / 2.0;
+        cout << fixed << setprecision(2) << "media = " << average << endl;
+        do {
+            cout << "novo calculo (1-sim 2-nao)" << endl;
+            cin >> option;
+        } while (option != 1 && option != 2);
+        if (option == 2) {
+            break;
+        }
+    }
+
+    return 0;
+}
