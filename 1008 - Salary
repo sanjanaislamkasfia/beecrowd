@@ -1,20 +1,13 @@
-#include <iostream>
-#include <iomanip>
+#include<iostream>
+#include<iomanip>
+#include<bits/stdc++.h>
 using namespace std;
-
 int main() {
     int employeeNumber, workedHours;
     double amountPerHour, salary;
-
-    // Read input
     cin >> employeeNumber >> workedHours >> amountPerHour;
-
-    // Calculate salary
     salary = workedHours * amountPerHour;
-
-    // Output the results
     cout << "NUMBER = " << employeeNumber << endl;
     cout << "SALARY = U$ " << fixed << setprecision(2) << salary << endl;
-
     return 0;
 }
