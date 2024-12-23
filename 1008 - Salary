@@ -3,11 +3,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
-    int employeeNumber, workedHours;
-    double amountPerHour, salary;
-    cin >> employeeNumber >> workedHours >> amountPerHour;
-    salary = workedHours * amountPerHour;
-    cout << "NUMBER = " << employeeNumber << endl;
-    cout << "SALARY = U$ " << fixed << setprecision(2) << salary << endl;
+    int employeeNumber,workedHours;
+    double amountPerHour,salary;
+    cin>>employeeNumber>>workedHours>>amountPerHour;
+    salary=workedHours*amountPerHour;
+    cout<<"NUMBER="<<employeeNumber<<endl;
+    cout<<"SALARY = U$ "<<fixed<<setprecision(2)<<salary<<endl;
     return 0;
 }
